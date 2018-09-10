@@ -10,9 +10,9 @@ $app->get('/[{name}]', function (Request $request, Response $response, array $ar
     $this->logger->info("Slim-Skeleton '/' route");
 
     // Render index view
-    echo "hola a todos :".$name; 
+    //echo "hola a todos :".$name; 
 
-	//$this->renderer->render($response, 'index.phtml', $args);
+	$this->renderer->render($response, 'index.phtml', $args);
 });
 
 $app->get('/productos/{codigo}', function (Request $request, Response $response, array $args) {
