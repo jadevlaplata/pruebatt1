@@ -10,7 +10,7 @@ $app->get('/[{name}]', function (Request $request, Response $response, array $ar
     $this->logger->info("Slim-Skeleton '/' route");
 
     // Render index view
-    echo "{'item1':'valor1'}"; 
+    echo "hola a todos :".$name; 
 
 	//$this->renderer->render($response, 'index.phtml', $args);
 });
